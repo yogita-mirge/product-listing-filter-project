@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Product Listing Page</h1>
+
+  <div class="filters">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Books">Books</option>
+    </select>
+
+    <input type="number" id="priceFilter" placeholder="Max Price">
+
+    <button onclick="applyFilters()">Apply Filters</button>
+  </div>
+
+  <div id="products"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
